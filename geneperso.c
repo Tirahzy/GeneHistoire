@@ -3,7 +3,7 @@
 #include <time.h>
 void generateurPerso()
 {
-    srand( time( NULL ) );
+    srand(time(NULL));
     char perso1;
     char perso2;
     char perso3;
