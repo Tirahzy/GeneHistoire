@@ -4,6 +4,7 @@
 
 void generateur_lieux()
 {
+    srand(time(NULL));
     char lieu1;
     char lieu2;
     char lieu3;
@@ -15,13 +16,13 @@ void generateur_lieux()
     printf(" Saissisez votre troisième lieu \n");
     scanf("%c", lieu3);
 
-    const char *chaines[] = {lieu1, lieu2, lieu3};
+
+    char *lieux[] = {lieu1, lieu2, lieu3};
 
     int aleatoire = rand()%3;
 
-    printf(" Lieu choisi : %s \n", chaines[aleatoire]);
+    printf(" Lieu choisi : %s \n", lieux[aleatoire]);
 
-    return 0;
     
 
 }
