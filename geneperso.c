@@ -21,14 +21,16 @@ void generateurPerso()
     {
     case 0:
         printf("Le perso principale est : %c ", perso1);
+        sleep(4);
         break;
     case 1:
         printf("Le perso principale est : %c ", perso2);
+        sleep(4);
         break;
     case 2:
         printf("Le perso principale est : %c ", perso3);
+        sleep(4);
         break;
-
     default:
         break;
     }
