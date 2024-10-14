@@ -38,4 +38,5 @@ void generateurPerso()
 int main()
 {
     generateurPerso();
+    return 0;
 }

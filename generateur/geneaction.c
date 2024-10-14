@@ -17,16 +17,16 @@ void generateur_action()
     scanf("%s", action3);
 
 
-    char *lieux[] = {lieu1, lieu2, lieu3};
+    char *actions[] = {action1, action2, action3};
 
     int aleatoire = rand()%3;
 
-    printf(" Lieu choisi : %s \n", lieux[aleatoire]);
+    printf(" Action choisie : %s \n", actions[aleatoire]);
    
 }
 
 int main()
 {
-    generateur_lieux();
+    generateur_action();
     return 0;
 }
