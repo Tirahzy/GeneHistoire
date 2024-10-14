@@ -8,9 +8,10 @@
 // Fonction pour obtenir une entrée utilisateur
 void obtenir_choix(char choix[][MAX_CHOICES], int nb_choix) {
     for (int i = 0; i < nb_choix; i++) {
-        printf("Entrez le choix %d : ", i + 1);
+        printf("entrez le choix %d : ", i + 1);
         fgets(choix[i], MAX_CHOICES, stdin);
-        choix[i][strcspn(choix[i], "\n")] = 0; // Supprimer le '\n' à la fin
+        choix[i][strcspn(choix[i], "\n")] = 0;
+        getchar();
     }
 }
 
@@ -52,9 +53,13 @@ int main() {
     srand(time(NULL)); // Initialisation de la graine aléatoire
 
     // Obtenir les choix de l'utilisateur
+    printf("Choix du perso: ");
     obtenir_choix(personnages, MAX_CHOICES);
+    printf("Choix de l'action: ");
     obtenir_choix(actions, MAX_CHOICES);
+    printf("Choix du lieu: ");
     obtenir_choix(lieux, MAX_CHOICES);
+    printf("Choix de l'objet: ");
     obtenir_choix(objets, MAX_CHOICES);
     afficher_resultat(
         choisir_personnage(personnages),
